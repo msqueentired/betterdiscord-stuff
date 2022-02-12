@@ -1,0 +1,35 @@
+section[class^="title-"] h3 {
+    margin-right: 0px;
+}
+section[class^="title-"]
+div[class^="children-"] div[class^="divider-"] {
+    background-color: transparent;
+    height: 100%;
+    vertical-align: center;
+    margin-right: 10px;
+}
+section[class^="title-"]
+div[class^="children-"] div[class^="divider-"]:after {
+    color:var(--interactive-muted);
+    display: inline-block;
+    font-weight: 800 !important;
+    content: '⮞';
+    transition: transform .2s .5s;
+}
+section[class^="title-"]
+div[class^="children-"]:hover div[class^="divider-"]:after {
+    transform: rotate(-180deg);
+    transition: transform .2s;
+}
+section[class^="title-"]
+div[class^="children-"] div[class^="topic-"] {
+    text-indent: -999px;
+    opacity: 0;
+    transition: text-indent 1.2s ease-out .2s, opacity .7s ease-out .2s;
+}
+section[class^="title-"]
+div[class^="children-"]:hover div[class^="topic-"] {
+    text-indent: 0px;
+    opacity: 1;
+    transition: text-indent 0.5s ease-out, opacity 0s;
+}

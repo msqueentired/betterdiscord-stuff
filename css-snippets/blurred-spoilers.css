@@ -1,0 +1,8 @@
+span[class^="spoilerText-"][aria-expanded="false"] {
+    filter: blur(4px);
+}
+span[class^="spoilerText-"],
+span[class^="inlineContent-"] {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0) !important;
+}

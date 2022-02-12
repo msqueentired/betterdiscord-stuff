@@ -1,0 +1,21 @@
+div#channels li[class^="containerDefault-"]
+div[aria-label="Text (NSFW)"] +
+div[class^="name-"]:before {
+    margin: 3px 0 0px 5px;
+    border-radius: 16px;
+    padding: 0 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    content: "18+";
+    float:right;
+    width:1rem !important;
+    position: relative;
+}
+div#channels li[class^="containerDefault-"]:hover
+div[aria-label="Text (NSFW)"] +
+div[class^="name-"]:before{
+    color:var(--interactive-hover);
+    background-color:var(--bdfdb-red) !important;
+}
