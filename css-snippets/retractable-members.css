@@ -1,28 +1,25 @@
-aside[class^="membersWrap-"],
+*[class^="membersWrap-"],
 div[class^="members-"],
 div[role="list"][aria-label="Members"] {
-    min-width: 56px;
-    max-width: 54px;
-    padding: 0 10px 0 0;
+    min-width: 64px;
+    max-width: 64px;
     transition: min-width 0.4s ease-in-out;
-    margin-left: 0px;
 }
-aside[class^="membersWrap-"]:hover,
-aside[class^="membersWrap-"]:hover
+*[class^="membersWrap-"]:hover,
+*[class^="membersWrap-"]:hover 
 div[class^="members-"],
-aside[class^="membersWrap-"]:hover
+*[class^="membersWrap-"]:hover
 div[role="list"][aria-label="Members"] {
     min-width: 240px;
-    padding: 0 0 20px;
     transition: min-width 0.4s ease-in-out;
 }
-aside[class^="membersWrap-"] h2 {
+*[class^="membersWrap-"] h2 {
     text-overflow: ellipsis;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.4s ease-in-out, opacity 300ms;
 }
-aside[class^="membersWrap-"]:hover h2 {
+*[class^="membersWrap-"]:hover h2 {
     text-overflow: ellipsis;
     visibility: visible;
     opacity: 1;
